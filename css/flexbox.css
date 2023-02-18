@@ -1,0 +1,126 @@
+.headerPrincipal .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerPrincipal-nav {
+    display: flex;
+}
+
+.rodapePrincipal .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    justify-content: space-around;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    ;
+    flex-direction: column;
+    column-gap: 100%;
+    height: 260px;
+    flex-wrap: wrap;
+}
+
+.contenidoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenidoPrincipal-cursos-link {
+    width: 23%;
+}
+
+/*.videoSobre .container{
+    display: flex;
+    justify-content: center;
+}
+
+.videoSobre-sobre{
+    text-align: center;
+}
+
+.videoSobre-video{
+    margin-right: 5%;
+}
+
+.videoSobre-button{
+    margin-top: 15%;
+    width: 100%;
+}*/
+
+.videoSobre .container {
+    display: flex;
+}
+
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*!Responsive*/
+
+@media(max-width:760px) {
+
+    .headerPrincipal .container {
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+
+    }
+
+    .headerPrincipal-nav {
+        flex-direction: column;
+    }
+
+    .contenidoPrincipal-cursos {
+        flex-direction: column;
+    }
+
+    .contenidoPrincipal-cursos-link {
+        width: 100%;
+    }
+
+    .rodapePrincipal-navMap-list {
+        height: auto;
+    }
+
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+    }
+
+    .rodapePrincipal-patrocinadores-list {
+        align-items: initial;
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset {
+        justify-content: center;
+    }
+
+    .rodapePrincipal-contatoForm-legend {
+        text-align: center;
+    }
+
+    .headerPrincipal-nav-link-app {
+        order: -1;
+    }
+
+    .videoSobre .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
